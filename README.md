@@ -2,6 +2,17 @@
 
 A FastAPI web application for submitting, storing, viewing, and exporting engineering project intake records.
 
+## Application Screenshots
+
+ ### Project Intake Form
+![Project Intake Form](screenshots/form-page.png)
+
+### Submission Success Page
+![Submission Success Page](screenshots/success-page.png)
+
+### Saved Projects Page
+![Saved Projects Page](screenshots/saved-projects-page.png)
+
 ## Features
 
 - Submit new engineering projects through a web form
@@ -34,19 +45,19 @@ engineering-project-intake-app/
     └── projects.html
 
 
-# How to Run
+## How to Run
 
-Clone the repository
+Clone the repository.
 
-Create a virtual environment
+Create a virtual environment.
 
-Activate the virtual environment
+Activate the virtual environment.
 
-Install dependencies
+Install dependencies:
 
 pip install -r requirements.txt
 
-Run the app
+Run the app:
 
 uvicorn main:app --reload
 
@@ -56,13 +67,3 @@ http://127.0.0.1:8000/form
 
 http://127.0.0.1:8000/projects
 
-## Application Screenshots
-
-### Project Intake Form
-![Project Intake Form](screenshots/form-page.png)
-
-### Submission Success Page
-![Submission Success Page](screenshots/success-page.png)
-
-### Saved Projects Page
-![Saved Projects Page](screenshots/saved-projects-page.png)
