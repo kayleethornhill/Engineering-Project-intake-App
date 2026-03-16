@@ -55,3 +55,14 @@ Open in browser:
 http://127.0.0.1:8000/form
 
 http://127.0.0.1:8000/projects
+
+## Application Screenshots
+
+### Project Intake Form
+![Project Intake Form](screenshots/form-page.png)
+
+### Submission Success Page
+![Submission Success Page](screenshots/success-page.png)
+
+### Saved Projects Page
+![Saved Projects Page](screenshots/saved-projects-page.png)
