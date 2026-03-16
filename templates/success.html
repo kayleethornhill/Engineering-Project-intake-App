@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Submitted Successfully</h1>
+
+    <p><strong>Project Name:</strong> {{ project_name }}</p>
+    <p><strong>Work Order Number:</strong> {{ work_order_number }}</p>
+    <p><strong>Project Engineer:</strong> {{ project_engineer }}</p>
+    <p><strong>Project Status:</strong> {{ project_status }}</p>
+    <p><strong>External Contractor Assigned:</strong> {{ external_contractor_assigned }}</p>
+    <p><strong>Contractor Name:</strong> {{ contractor_name }}</p>
+    <p><strong>Estimated Construction Start:</strong> {{ estimated_construction_start }}</p>
+    <p><strong>Project Description:</strong> {{ project_description }}</p>
+
+    <br>
+    <a href="/form">Submit Another Project</a>
+    <br><br>
+    <a href="/projects">View All Saved Projects</a>
+    </div>
+</body>
+</html>

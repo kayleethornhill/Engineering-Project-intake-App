@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Project Intake</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Engineering Project Intake Form</h1>
+
+        <form action="/submit" method="post">
+        <label for="project_name">Project Name:</label><br>
+        <input type="text" id="project_name" name="project_name"><br><br>
+
+        <label for="work_order_number">Work Order Number:</label><br>
+        <input type="text" id="work_order_number" name="work_order_number"><br><br>
+
+        <label for="project_engineer">Project Engineer:</label><br>
+        <input type="text" id="project_engineer" name="project_engineer"><br><br>
+
+        <label for="project_status">Project Status:</label><br>
+        <select id="project_status" name="project_status">
+            <option value="Sent to Bid">Sent to Bid</option>
+            <option value="Contractor Assigned">Contractor Assigned</option>
+            <option value="In Review Process">In Progress</option>
+            <option value="Issued for Construction">Completed</option>
+        </select><br><br>
+
+        <label for="external_contractor_assigned">External Contractor Assigned:</label><br>
+        <select id="external_contractor_assigned" name="external_contractor_assigned">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="contractor_name">Contractor Name:</label><br>
+        <input type="text" id="contractor_name" name="contractor_name"><br><br>
+
+        <label for="estimated_construction_start">Estimated Construction Start:</label><br>
+        <input type="date" id="estimated_construction_start" name="estimated_construction_start"><br><br>
+
+        <label for="project_description">Project Description:</label><br>
+        <textarea id="project_description" name="project_description" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit Project</button>
+        </form>
+    </div>
+</body>
+</html>

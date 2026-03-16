@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Projects</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Saved Projects</h1>
+
+    <a href="/form">Submit Another Project</a>
+    <br><br>
+    <a href="/export/csv">Export Projects to CSV</a>
+    <br><br>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>ID</th>
+            <th>Project Name</th>
+            <th>Work Order Number</th>
+            <th>Project Engineer</th>
+            <th>Project Status</th>
+            <th>External Contractor Assigned</th>
+            <th>Contractor Name</th>
+            <th>Estimated Construction Start</th>
+            <th>Project Description</th>
+        </tr>
+
+        {% for project in projects %}
+        <tr>
+            <td>{{ project[0] }}</td>
+            <td>{{ project[1] }}</td>
+            <td>{{ project[2] }}</td>
+            <td>{{ project[3] }}</td>
+            <td>{{ project[4] }}</td>
+            <td>{{ project[5] }}</td>
+            <td>{{ project[6] }}</td>
+            <td>{{ project[7] }}</td>
+            <td>{{ project[8] }}</td>
+        </tr>
+        {% endfor %}
+     </table>
+    </div>
+</body>
+</html>
