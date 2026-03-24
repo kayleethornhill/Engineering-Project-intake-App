@@ -2,6 +2,15 @@
 
 A FastAPI web application for submitting, storing, viewing, and exporting engineering project intake records.
 
+Problem: 
+Engineering teams lacked a standardized way to submit new projects to Document Control and keep record of the submission.
+
+Solution:
+I designed and built a system that: 
+- captures project submissions through a structured form
+- automates data entry into a centralized system
+- Enables visibility into project staus and workload
+
 ## Application Screenshots
 
  ### Project Intake Form
